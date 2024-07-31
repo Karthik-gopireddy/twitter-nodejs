@@ -363,7 +363,7 @@ app.delete("/tweets/:tweetId", authenticateToken, async (request, response) => {
 });
 
 
-app.get("/", authenticateToken, async (request, response) => {
+app.get("/", async (request, response) => {
   response.send("main page");
 });
 
