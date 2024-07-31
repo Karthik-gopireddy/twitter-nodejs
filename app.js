@@ -169,7 +169,7 @@ app.get("/user/followers", authenticateToken, async (request, response) => {
 });
 
 //Get Tweet API-6
-app.get("/tweets/:tweetId", authenticateToken, async (request, response) => {
+app.get("/tweets/:tweetId", async (request, response) => {
   const { tweetId } = request;
   const { payload } = request;
   const { user_id, name, username, gender } = payload;
